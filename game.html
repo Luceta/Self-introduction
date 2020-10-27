@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Casino Game</title>
+    <link rel="stylesheet" href="src/style.css" />
+
+
+</head>
+
+<body>
+    <h1>Random Number Game</h1>
+    <h2>Generate a number between 0 and </h2>
+
+
+    <form>
+        <input id="rangenum" type="range" min="0" max="200" list="tickmarks">
+        <datalist id="tickmarks">
+            <option value="25"></option>
+            <option value="50"></option>
+            <option value="75"></option>
+            <option value="100"></option>
+        </datalist>
+    </form>
+
+    <div class="userbox">
+
+        <label id="number">Guess the number:</label>
+        <input id="userchoice" type="number" />
+        <button class="usernumber">PLAY🕹</button>
+    </div>
+
+    <div class="numberbox">
+    </div>
+    <div class="result"></div>
+
+
+    <script src="casino.js"></script>
+
+
+
+</body>
+
+</html>

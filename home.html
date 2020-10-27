@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke world</title>
+    <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__weather">
+            <span class="weather__text"></span>
+        </div>
+        <div class="status-bar__time">
+            <span>00:00</span>
+        </div>
+        <div class="status-bar__battery">
+            <img src="src/images/no-battery.png" id="no" />
+            <div id="level"></div>
+            <span>
+                <i class="fas fa-bolt" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h2 class="screen-header__title">Lucas</h2>
+        <div class="screen-header__icons">
+            <span>
+
+                <i class="fas fa-info-circle fa-3x"></i>
+            </span>
+            <span>
+                <img src="src/images/project-management.png" />
+            </span>
+            <span>
+                <a class="screen-header__icons__heart" href="fav.html">
+                    <i class="fas fa-heart fa-3x"></i>
+                </a>
+            </span>
+            <span>
+                <a class="screen-header__icons" href="game.html">
+                    <i class="fas fa-gamepad fa-3x"></i>
+                </a>
+            </span>
+        </div>
+    </header>
+    <section class="main">
+        <div class="chat-left">
+            <div class="chat-left__row">
+                <div class="message__info">
+                    <p class="message__bubble1">Hello!
+                        <br>
+                        nice to meet you!
+                    </p>
+                </div>
+            </div>
+            <div class="chat-left__row">
+                <div class="message__info">
+                    <p class="message__bubble2">I am Lucas
+                        <br>
+                        who want to be developer!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="profile">
+            <img class="profile__avatar" src="src/images/profile.png" />
+        </div>
+        <div class="chat-right">
+            <div class="chat-right__row">
+                <div class="message__info">
+                    <p class="message__bubble3">if you want to know me more
+                        <br>
+                        click the button above
+                    </p>
+                </div>
+            </div>
+
+            <div class="chat-right__row">
+                <div class="message__info">
+                    <p class="message__bubble4">
+                        여러분들과 함께 개발을 즐겁게 하면서,
+                        <br>
+                        웹개발자로서 성장하고 더 나아가
+                        <br>
+                        date science로서 성장하고 싶습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <nav class="contact">
+
+        <ul class="contact__list">
+            <li>
+                <a class="contact__link" href="https://github.com/Luceta">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <!--a class-->
+                <i class="fab fa-vimeo fa-2x"></i>
+            </li>
+            <li>
+                <a class="contact__link" href="mailto:irisonestar@gmail.com" title="Click here">
+                    <i class="far fa-paper-plane"></i>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <div id="splash-screen">
+        <img src="logo/wecodelogo.jpeg">
+    </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script src="minclock.js"></script>
+    <script src="battery.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>

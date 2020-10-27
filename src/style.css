@@ -1,0 +1,120 @@
+@import "home.css";
+@import "fav.css";
+
+body,
+html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+:root {
+  --yellow: #fae100;
+  --horizontal-space: 25px;
+  --main-border: 1.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 320px;
+}
+
+.welcome .name__input {
+  appearance: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+.welcome .name__input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.welcome .name__input:focus,
+.welcome .name__input:active {
+  outline: none;
+}
+
+.btninput {
+  border: none;
+  outline: none;
+}
+.bgImage {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.2s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.clock__text {
+  font-size: 7rem;
+  margin-bottom: 0;
+}
+.name__text {
+  font-size: 2rem;
+}
+
+.welcome .btnholder {
+  appearance: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  margin-top: 25px;
+}
+
+.welcome .btnholder::placeholder {
+  color: white;
+  opacity: 0.9;
+}
+
+.welcome .btnholder:focus,
+.welcome .btnholder:active {
+  outline: none;
+}
+
+i {
+  font-size: 25px;
+}
+.btnplay {
+  color: white;
+}
+.contact {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.contact__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact__link {
+  color: #2e363e;
+  position: relative;
+}
